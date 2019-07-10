@@ -1,0 +1,19 @@
+body{
+    background-color: #eaeaea;
+}
+
+.header-logo {
+    font-family: "UA_Delphian-ATT";
+    text-align: center;
+    padding-top: 250px;
+    font-size: 100px;
+
+}
+
+@font-face {
+    font-family: "UA_Delphian-ATT";
+    font-style: normal;
+    font-weight: normal;
+    src:
+      url("16052.ttf") format("truetype");
+  }
