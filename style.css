@@ -1,18 +1,103 @@
 body{
     background-color: #eaeaea;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
+/* ШАПКА */
 .header-logo {
-    width: 50%;
+    display: block;
     margin: auto;
     margin-top: 250px;
-    padding: 20px;
-    font-family: "UA_Delphian-ATT";
-    text-align: center;
-    font-size: 80px;
-    border: 1px solid black;
+}
+
+.container {
+    max-width: 1120px;
+    margin: auto;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 94px;
+    margin-top: 129px;
+    height: 123px;
+    box-shadow: 0 0 13px rgba(11, 12, 12, 0.15);
+    background-color: #f8f8f8;
+}
+
+.nav {
+    flex-basis: 80%;
+}
+
+.nav__link {
+    text-decoration: none;
+    margin-left: 70px;
+    color: #4D4D4D;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    /* Text style for "H" */
+    letter-spacing: 0.4px;
+    /* Text style for "OME     Re" */
+    letter-spacing: 0.4px;
+}
+
+.nav__link:hover{
+    text-decoration: underline;
+}
+
+
+
+.about-wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-basis: 1120px;
+    margin-top: 85px;
+    background-color: #f8f8f8;
+    background-image: url(cover_photo.JPG);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 438px;
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.15);
 
 }
+
+.about-logo {
+    padding: 30px;
+    width: 350px;
+    align-self: flex-start;
+
+}
+
+.about-content {
+ 
+    padding-right: 100px;
+}
+
+.about-wrap .about-content td{
+    font-size: 13px;
+    font-weight: 300;
+  }
+  .about-wrap .about-content td.title{
+    padding-right: 10px;
+    font-weight: 500;
+  }
+  .about-wrap .about-content td.break{
+    padding-right: 15px;
+  }
+  .about-wrap .about-content tr{
+    height: 35px;
+  }
+
+
+ 
+
+
+
+
+
 
 
 
@@ -25,3 +110,17 @@ body{
     src:
       url("16052.ttf") format("truetype");
   }
+
+  @font-face {
+    font-family: "chelsea";
+    font-style: normal;
+    font-weight: normal;
+    src:
+      url("8763.ttf") format("truetype");
+  }
+
+  @media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
