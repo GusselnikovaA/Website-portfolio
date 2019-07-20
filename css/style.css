@@ -56,7 +56,7 @@ body{
     flex-basis: 1120px;
     margin-top: 85px;
     background-color: #f8f8f8;
-    background-image: url(cover_photo.JPG);
+    background-image: url(../img/cover_photo.JPG);
     background-repeat: no-repeat;
     background-size: contain;
     min-height: 438px;
@@ -108,7 +108,7 @@ body{
     font-style: normal;
     font-weight: normal;
     src:
-      url("16052.ttf") format("truetype");
+      url("../font/16052.ttf") format("truetype");
   }
 
   @font-face {
@@ -116,7 +116,7 @@ body{
     font-style: normal;
     font-weight: normal;
     src:
-      url("8763.ttf") format("truetype");
+      url("../font/8763.ttf") format("truetype");
   }
 
   @media (max-width: 1200px) {
