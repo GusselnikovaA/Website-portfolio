@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
     background-color: #eaeaea;
     font-family: 'Josefin Sans', sans-serif;
@@ -13,6 +17,9 @@ body{
 .container {
     max-width: 1120px;
     margin: auto;
+    margin-top: 85px;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.15);
 }
 
 .header-nav {
@@ -21,9 +28,7 @@ body{
     align-items: center;
     padding-left: 94px;
     margin-top: 129px;
-    height: 123px;
-    box-shadow: 0 0 13px rgba(11, 12, 12, 0.15);
-    background-color: #f8f8f8;
+    min-height: 123px;
 }
 
 .nav {
@@ -48,32 +53,28 @@ body{
 }
 
 
-
+/* О СЕБЕ */
 .about-wrap {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex-basis: 1120px;
-    margin-top: 85px;
-    background-color: #f8f8f8;
-    background-image: url(../img/cover_photo.JPG);
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 438px;
-    box-shadow: 0 0 13px rgba(0, 0, 0, 0.15);
+    min-height: 435px;
+}
 
+.about-wrap img {
+    max-width: 90%;
+    min-height: 100%;
 }
 
 .about-logo {
     padding: 30px;
     width: 350px;
     align-self: flex-start;
-
 }
 
 .about-content {
- 
-    padding-right: 100px;
+    padding-right: 50px;
 }
 
 .about-wrap .about-content td{
@@ -90,6 +91,20 @@ body{
   .about-wrap .about-content tr{
     height: 35px;
   }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .homeworks {
+    min-height: 200px;
+  }
+
 
 
  
@@ -123,4 +138,50 @@ body{
     .container {
         max-width: 960px;
     }
+
+    .header-logo {
+    max-width: 840px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-wrap {
+        flex-direction: column;
+    }
+
+    .about-wrap img {
+        max-width: 100%;
+        min-height: 100%;
+    }
+
+    .header-logo {
+        max-width: 500px;
+        }
+}
+
+.homeworks {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.number {
+    margin: 30px;
+    font-family: "UA_Delphian-ATT"; 
+    text-align:center;
+    line-height: 65px;
+    padding-top: 20px;
+    font-size: 40px;
+    font-weight: 300;
+    border: 1px solid #2f2f2f;
+    color: #2f2f2f;
+    border-radius: 50%;
+    max-width: 150px;
+    min-height: 150px;
+}
+
+.number:hover {
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.6);
+
 }
