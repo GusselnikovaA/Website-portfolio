@@ -1,0 +1,90 @@
+*
+  box-sizing: border-box
+  
+body 
+  background-color: $background-color
+  font-family: 'Josefin Sans', sans-serif;
+
+img
+  max-width: 100%
+
+a 
+  text-decoration: none
+  outline: none
+  cursor: pointer
+
+.container 
+  max-width: 1200px
+  width: 80%
+  margin: auto
+
+.block 
+  margin-top: 85px 
+  background-color: $block-color
+  box-shadow: 0 0 13px $shadow-color
+
+.list 
+  padding: 0
+  margin: 0
+  list-style: none
+
+.section 
+  padding-top: 55px
+  padding-bottom: 55px
+
+.title 
+  font-size: 46px
+  line-height: 40px
+  text-transform: uppercase
+  text-align: center
+  letter-spacing: 4px
+
+.input
+  border: none
+  padding: 12px
+  outline: none
+  background-color: transparent
+  letter-spacing: 1.2px
+
+.button 
+  outline: none
+  cursor: pointer
+  text-transform: uppercase
+  letter-spacing: 2px
+
+.arrow 
+  z-index: 998
+  bottom: 10px
+  display: flex
+  justify-content: center
+  width: 100%
+  a
+    display: block
+    width: 40px
+    z-index: 999
+
+@media (max-width: 1150px)
+  .section 
+    padding-top: 30px
+    padding-bottom: 30px
+
+  .title 
+    font-size: 40px
+
+@media (max-width: 750px)
+  .arrow 
+    a 
+      width: 30px
+  .title 
+    font-size: 28px
+
+@media (max-width: 550px)
+  .section
+    padding-top: 10px
+    padding-bottom: 10px
+  
+
+// // HOVER ЭФФЕКТЫ 
+// @media (min-width: 992px)
+//   // HOVER эффекты блока HEADER 
+  
